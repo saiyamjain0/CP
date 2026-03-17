@@ -28,5 +28,18 @@ int main() {
   return 0;
 }
 // counting divisors : just the size of the returned vector from get_divisors (tc = o(root n)
-// we can also do it with tc = o(log x) and with pre processing of o(mlogm) 
-
+// we can also do it with tc = o(log x) and with pre processing of o(mlogm) of sieve
+int main(){
+  ios_base::sync_with_stdio(0);
+  cin.tie(0);
+  int t; cin >> t;
+  while(t--){
+    int x; cin >> x; // expecting x to not be 1.
+    vector<int> v;
+    while(x!= 1){
+      v.push_back(sieve1[x]);
+      x /= sieve1[x];
+    }
+    // if you need the count just do the size of the v else if you want the prime factorisation then do the v one.
+  }
+}
