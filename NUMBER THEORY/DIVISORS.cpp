@@ -1,4 +1,4 @@
-// getting divisors as a vector.
+// getting divisors as a vector. (tc = o(root n)
 using ll = long long;
 
 vector<ll> get_divisors(ll n) {
@@ -27,4 +27,6 @@ int main() {
   }
   return 0;
 }
-// counting divisors : just the size of the returned vector from get_divisors
+// counting divisors : just the size of the returned vector from get_divisors (tc = o(root n)
+// we can also do it with tc = o(log x) and with pre processing of o(mlogm) 
+
