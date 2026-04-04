@@ -1,6 +1,6 @@
 // SMALLEST PRIME FACTOR USING SIEVE
 // spf[i] gives you the smallest prime factor of i
-// i can have a limit of 10^7 maxxx....
+// MAXN can have a limit of 10^7 maxxx....
 const int MAXN = 1000006;
 int spf[MAXN];
 void sieve(){
